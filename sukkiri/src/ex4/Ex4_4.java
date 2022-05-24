@@ -8,7 +8,7 @@ public class Ex4_4 {
 		int input = new java.util.Scanner(System.in).nextInt();
 		
 		for (int i = 0; i < numbers.length; i++) {
-			if (i == input) {
+			if (numbers[i] == input) {
 				System.out.println("アタリ！");
 			}
 		}

@@ -1,7 +1,7 @@
 package chap08;
 
+import old.Matango_20220602;
 import world.Hero;
-import world.Matango;
 
 public class Main307 {
 
@@ -14,18 +14,18 @@ public class Main307 {
 		h.hp = 100;
 		System.out.println("勇者" + h.name + "を生み出しました！");
 		
-		Matango m1 = new Matango();
+		Matango_20220602 m1 = new Matango_20220602();
 		m1.hp = 50;
 		m1.suffix = 'A';
 		
-		Matango m2 = new Matango();
+		Matango_20220602 m2 = new Matango_20220602();
 		m2.hp = 48;
 		m2.suffix = 'B';
 		
 //		冒険の始まり
-		h.slip();
-		m1.run();
-		m2.run();
+//		h.slip();
+//		m1.run();
+//		m2.run();
 		h.run();
 		
 //		お化けキノコよ、この仮想世界に生まれよ!

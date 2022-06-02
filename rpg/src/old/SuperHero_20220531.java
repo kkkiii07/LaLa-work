@@ -1,11 +1,11 @@
-package world;
+package old;
 
 public class SuperHero_20220531 {
 	String name = "ミナト";
 	int hp = 100;
 	boolean flying;
 	
-	public void attack(Matango m) {
+	public void attack(Matango_20220602 m) {
 		System.out.println(this.name + "の攻撃！");
 		m.hp -= 5;
 		System.out.println("5ポイントのダメージをあたえた！");

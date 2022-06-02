@@ -1,21 +1,21 @@
 package ex10;
 
-import world.PoisonMatango;
-import world.SuperHero;
+import world.Hero;
+import world.PoisonMatango_t;
 
 public class Main {
 
 	public static void main(String[] args) {
-		PoisonMatango pm = new PoisonMatango('Z');
+		PoisonMatango_t pm = new PoisonMatango_t('X');
 		
-//		Hero h = new Hero();
-//		pm.attack(h);
+		Hero h = new Hero("ささき");
+		pm.attack(h);
 		
-		SuperHero sh = new SuperHero("アサカ");
-		pm.attack(sh);
+//		SuperHero sh = new SuperHero("スッパマン");
+//		pm.attack(sh);
 
 //		h.attack(pm);
-		sh.attack(pm);
+//		sh.attack(pm);
 	}
 
 }

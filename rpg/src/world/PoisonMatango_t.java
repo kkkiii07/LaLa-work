@@ -11,15 +11,15 @@ public class PoisonMatango_t extends Matango_t {
 	public void attack(Hero h) {
 		System.out.println("PoisonMatangoの攻撃！");
 		super.attack(h);
-		if (this.pcount != 0) {
-			System.out.println(this.suffix + "は、さらに毒の胞子をばらまいた！");
-			int damege = h.hp / 5;
-			h.hp = h.hp - damege;
-			System.out.println(h.name + "に" + damege + "ポイントのダメージ！");
-			System.out.println(h.name + "のHP：" + h.hp);
-			this.pcount--;
-			System.out.println("毒攻撃の残り回数：" + this.pcount);
-		}
+//		if (this.pcount != 0) {
+//			System.out.println(this.suffix + "は、さらに毒の胞子をばらまいた！");
+//			int damege = h.hp / 5;
+//			h.hp = h.hp - damege;
+//			System.out.println(h.name + "に" + damege + "ポイントのダメージ！");
+//			System.out.println(h.name + "のHP：" + h.hp);
+//			this.pcount--;
+//			System.out.println("毒攻撃の残り回数：" + this.pcount);
+//		}
 	}
 	
 	

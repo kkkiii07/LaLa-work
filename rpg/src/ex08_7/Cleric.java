@@ -1,4 +1,4 @@
-package ex8_7;
+package ex08_7;
 
 import java.util.Random;
 

@@ -1,4 +1,4 @@
-package ex8;
+package ex08;
 
 import world.Cleric_t;
 

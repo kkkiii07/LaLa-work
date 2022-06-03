@@ -10,9 +10,11 @@ public class Main307 {
 		Hero h = new Hero();
 		
 //		h.フィールドに初期値をセット
-		h.name = "ミナト";
-		h.hp = 100;
-		System.out.println("勇者" + h.name + "を生み出しました！");
+//		h.name = "ミナト";
+		h.setName("ミナト");
+//		h.hp = 100;
+		h.setHp(100);
+		System.out.println("勇者" + h.getName() + "を生み出しました！");
 		
 		Matango_20220602 m1 = new Matango_20220602();
 		m1.hp = 50;

@@ -9,6 +9,10 @@ public abstract class Character {
 	public Character(String name) {
 		this.name = name;
 	}
+
+//	public void fireball(Matango_t m) {
+//		System.out.println(this.name + "は火を出した！");
+//	}
 	
 	public void run() {
 		System.out.println(this.name + "は逃げ出した。");

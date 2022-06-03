@@ -1,4 +1,4 @@
-package ex9;
+package ex09;
 
 import world.Thief;
 

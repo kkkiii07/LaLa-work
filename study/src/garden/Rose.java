@@ -10,12 +10,14 @@ public class Rose extends Flower {
 	 //↑親クラスのフィールドをオーバーライドしていることとなるので、
 	 //↑フィールドをオーバーライドしてはいけない
 	
-	public Rose() {}
+	public Rose() {} //名前を与えなかったら、何も表示しない
 	public Rose(String name) {
-		super(name);
+		super(name); //privateの時this.name = name;が使えないのでsuperを使用
+//		this.name = name;
 	}
 
 	public void smell () {
-		System.out.println(this.name + "はいい香りがする。");
+		System.out.println(this.getName() + "はいい香りがする。");
+		//this.getName()で親の名前を見に行く
 	}
 }

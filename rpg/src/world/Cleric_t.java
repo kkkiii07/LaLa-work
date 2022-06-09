@@ -3,11 +3,11 @@ package world;
 import java.util.Random;
 
 public class Cleric_t {
-	String name;
-	int hp = 50;
-	final int HP_MAX = 50; //定数フィールドなので定数都」なるので大文字
+	private String name;
+	private int hp = 50;
+	public static final int HP_MAX = 50; //定数フィールドなので定数都」なるので大文字
 	int mp = 10;
-	final int MP_MAX = 10; //定数フィールドなので定数都」なるので大文字
+	public static final int MP_MAX = 10; //定数フィールドなので定数都」なるので大文字
 	
 	public void selfAid() {
 		//引数があれば()の中に引数を書く
@@ -45,5 +45,30 @@ public class Cleric_t {
 		return kaifuku;
 		
 	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getHp() {
+		return hp;
+	}
+
+	public void setHp(int hp) {
+		this.hp = hp;
+	}
+
+	public int getMp() {
+		return mp;
+	}
+
+	public void setMp(int mp) {
+		this.mp = mp;
+	}
+
 	
 }

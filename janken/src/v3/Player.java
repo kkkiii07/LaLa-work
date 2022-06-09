@@ -8,9 +8,9 @@ public abstract class Player {
 	//次の手を決める戦略の型（インターフェース）
 //	private NextHand nextHand = new RamdomNextHand();
 // ↑多態性　ざっくり newさえすればどんなインスタンスでも入れれる。
-	private NextHand nextHand;
+	private NextHand nextHand; //NextHandのインターフェースの事
 	
-	public Player(NextHand nextHand) {
+	public Player(NextHand nextHand) { //コンストラクタ
 		this.nextHand = nextHand;
 	}
 	
@@ -32,7 +32,8 @@ public abstract class Player {
 	}
 
 	public void setHand() {
-		this.hand = nextHand.decideHand();
+		this.hand = this.nextHand.decideHand(); //ランダムに0か1か2が入る
+		//this.nextHandは14行目のthis.nextHand = nextHand;
 	}
 
 	public String getResult() {
